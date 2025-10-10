@@ -31,7 +31,7 @@ class Author(models.Model):
 
 class Publisher(models.Model):
     name = models.CharField(max_length=255)
-    address = models.TextField(blank=True, null=True, default="N/A")
-    website = models.URLField(blank=True, null=True)
+    address = models.TextField(blank=True, null=True, default="abc")
+    website = models.URLField(blank=True, null=False)
     created_at = models.DateTimeField(auto_now_add=True)
     updated_at = models.DateTimeField(auto_now=True)
